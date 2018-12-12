@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+   <form role="form">
+       <input type="text" class="form-control">
+       <textarea class="form-control">文本域</textarea>
+
+       <div class="checkbox">
+           <label>
+               <input type="checkbox" value="">
+               跑步
+           </label>
+       </div>
+       <div class="checkbox">
+           <label>
+               <input type="checkbox" value="">
+               打篮球
+           </label>
+       </div>
+
+       <div class="radio">
+          <label>
+              <input type="radio" name="optionsRadio" checked>
+              男
+          </label>
+           <label>
+               <input type="radio" name="optionsRadio" checked>
+               女
+           </label>
+       </div>
+     <!--  multiple:控制全部显示-->
+       <select class="form-control" >
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+       </select>
+
+       <p class="form-control-static">静态显示文本用作提示用语</p>
+
+       <input type="text" class="form-control" placeholder="禁用文本框" disabled>
+
+       <input type="text" class="form-control" placeholder="只读文本框" readonly>
+
+<br><br>
+       <!--全部禁用效果-->
+       <fieldset disabled>
+
+           <div class="radio">
+               <label>
+                   <input type="radio" name="optionsRadio" checked>
+                   男
+               </label>
+               <label>
+                   <input type="radio" name="optionsRadio" checked>
+                   女
+               </label>
+           </div>
+           <!--  multiple:控制全部显示-->
+           <select class="form-control" >
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+           </select>
+       </fieldset>
+
+       <br> <br> <br>
+       <p>各种提示语句的应用，可以通过栅格控制长度：col-xs-5</p>
+       <div class="form-group has-error has-feedback col-xs-5" >
+           <label>
+               错误
+           </label>
+           <input type="text" class="form-control">
+           <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+       </div>
+       <div class="form-group has-warning ">
+           <label>
+               警告
+           </label>
+           <input type="text" class="form-control">
+       </div>
+       <div class="form-group has-success">
+           <label>
+              成功
+           </label>
+           <input type="text" class="form-control">
+       </div>
+       <div class="form-group has-feedback">
+           <label>
+               回复
+           </label>
+           <input type="text" class="form-control">
+       </div>
+   </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.1.4.js"></script>
+    <script src="bootstrap.min.js"></script> <link rel="stylesheet" href="bootstrap.min.css">
+    <!--Bootstrap的JavaScript要求jQuery版本1.9.1或更高，但低于版本4-->
+
+</head>
+<body>
+
+<div class="container">
+    <div class="dropdown"><!--pull-right：加在这里就会正常显示在右边-->
+        <button class="btn btn-default dropdown-toggle " type="button" data-toggle="dropdown"><!--pull-right在这加会覆盖掉部分-->
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"><!--dropdown-menu-right：让选择框列表显示在右边-->
+            <!--<li role="presentation" class="dropdown-header">大写</li>--><!--标识-->
+            <li>
+                <a href="#" role="menuitem">一</a>
+            </li>
+            <li>
+                <a href="#" role="menuitem">二</a>
+            </li>
+            <li>
+                <a href="#" role="menuitem">三</a>
+            </li>
+            <li class="disabled">
+                <a href="#" role="menuitem">四</a>
+            </li>
+            <!--<li role="presentation" class="dropdown-header">小写</li>-->
+            <li role="presentation" class="divider"></li>
+            <li>
+                <a href="#" role="menuitem">1</a>
+            </li>
+            <li>
+                <a href="#" role="menuitem">2</a>
+            </li>
+            <li>
+                <a href="#" role="menuitem">3</a>
+            </li>
+            <li>
+                <a href="#" role="menuitem">4</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

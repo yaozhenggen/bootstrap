@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提示框</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-2.1.4.js"></script>
+    <script src="bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            Tooltip
+            <small>Bootstrap test</small>
+        </div>
+        <p>我非常喜欢，我好喜欢我非常喜欢，<a href="#" data-toggle="tooltip" title="" data-original-title="提示文字">我好喜欢我非常喜欢</a>，我好喜欢我非常喜欢，我好喜欢我非常喜欢，我好喜欢
+            我非常喜欢，我好喜欢我非常喜欢，我好喜欢我非常喜欢，我好喜欢我非常喜欢，我好喜欢我非常喜欢，我好喜欢
+            我非常喜欢，我好喜欢我非常喜欢，我好喜欢我非常喜欢，我好喜欢我非常喜欢，我好喜欢我非常喜欢，我好喜欢
+            我非常喜欢，我好喜欢我非常喜欢，我好喜欢我非常喜欢，我好喜欢我非常喜欢，我好喜欢我非常喜欢，我好喜欢
+        </p>
+        <br>
+        <p>
+            <button class="btn btn-default" type="button" data-toggle="tooltip" data-placement="left" data-original-title="left提示文字" title="">button</button>
+            <button class="btn btn-default" type="button" data-toggle="tooltip" data-placement="right" data-original-title="right提示文字" title="">button</button>
+            <button class="btn btn-default" type="button" data-toggle="tooltip" data-placement="top" data-original-title="top提示文字" title="">button</button>
+            <button class="btn btn-default" type="button" data-toggle="tooltip" data-placement="bottom" data-original-title="bottom提示文字" title="">button</button>
+        </p>
+    </div>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+</script>
+</body>
+</html>

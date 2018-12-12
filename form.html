@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form的demo</title>
+</head>
+<body>
+<form role="form">
+    <div class="form-group">
+          <label>用户名：</label>
+          <input type="date" class="form-control" placeholder="不消失的提示文字">
+
+    </div>
+    <div class="form-group">
+        <label>email：</label>
+
+        <input type="email" class="form-control" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label>选择文件</label>
+       <input type="file">
+        <p class="help-block">选择你需要的文件</p>
+    </div>
+</form>
+<!--form-inline:内连表单,宽度自适应
+     label;必须有，当不需要的时候可以通过class="sr-only"进行隐藏
+     -->
+<form role="form" class="form-inline">
+    <div class="form-group">
+        <label>用户名：</label>
+        <input type="date" class="form-control" placeholder="不消失的提示文字">
+        <input type="email" class="form-control" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label class="sr-only">选择文件</label>
+        <input type="file">
+        <p class="help-block">选择你需要的文件</p>
+    </div>
+</form>
+
+
+
+<!--行表单-->
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Email</label>
+       <div class="col-sm-10">
+           <input class="email" placeholder="Email">
+       </div>
+    </div>
+
+    <div class="form-group">
+        <label>password</label>
+           <input class="password" placeholder="password">
+    </div>
+</form>
+
+
+</body>
+</html>

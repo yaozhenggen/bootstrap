@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-2.1.4.js"></script>
+    <script src="bootstrap.min.js"></script>
+</head>
+<body>
+     <div class="container">
+         <div class="btn-group ">  <!--在这里添加dropup属性会在箭头向上-->
+             <button class="btn bg-info" type="button">分裂式下拉菜单</button>
+             <button type="button" class="btn bg-info dropdown-toggle" data-toggle="dropdown">
+                 <span class="caret"></span>
+             </button>
+             <ul class="dropdown-menu" role="menu" >
+                 <li>
+                     <a href="#">1</a>
+                     <a href="#">2</a>
+                     <a href="#">3</a>
+                 </li>
+             </ul>
+         </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滚动监听</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-2.1.4.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+        body{
+            padding-top: 70px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+     <div class="container">
+         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+             <div class="container-fluid">
+                 <div class="navbar-header">
+                     <button class="navbar-toggle collapse" type="button" data-toggle="collapse" data-target=".js-navbar-scrollspy"><!--js-navbar-scrollspy滚动效果--></button>
+                     <a href="#" class="navbar-brand">Project Name</a>
+                 </div>
+                 <div class="collapse navbar-collapse js-navbar-scrollspy">
+                     <ul class="nav navbar-nav">
+                         <li class="">
+                             <a href="#yao">@yao</a>
+                         </li>
+                         <li class="">
+                             <a href="zhenggen">@zhenggen</a>
+                         </li>
+
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                 Dropdown
+                                 <span class="caret"></span>
+                             </a>
+                             <ul class="dropdown-menu" role="menu">
+                                 <li class="">
+                                     <a href="#one" tabindex="-1">1</a>
+                                 </li>
+                                 <li>
+                                     <a href="#two" tabindex="-1">2</a>
+                                 </li>
+                             </ul>
+                         </li>
+
+
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+     </div>
+     <h2 id="yao">姚正根</h2>
+     <p>要切换的内容</p>
+     <h2 id="zhenggen">姚正根2</h2>
+     <p>要切换的内容</p>
+     <h2 id="one">姚正根3</h2>
+     <p>要切换的内容</p>
+     <h2 id="two">姚正根4</h2>
+     <p>要切换的内容</p>
+</body>
+</html>
